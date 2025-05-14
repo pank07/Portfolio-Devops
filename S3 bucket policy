@@ -1,0 +1,14 @@
+# Here’s a sample S3 bucket policy that allows public read access to all files in the bucket (e.g., for a static website):
+# Basic Public Read Policy (for Static Website Hosting)
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::portfolio-bucket-for-test/*"
+    }
+  ]
+}
